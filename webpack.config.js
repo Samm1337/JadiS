@@ -1,6 +1,6 @@
 var path = require('path');
-var SRC_DIR = path.join(__dirname, '/client/App/src');
-var DIST_DIR = path.join(__dirname, '/client/App');
+var SRC_DIR = path.join(__dirname, '/client/src');
+var DIST_DIR = path.join(__dirname, '/client');
 
 module.exports = {
   entry: `${SRC_DIR}/index.jsx`,
@@ -9,7 +9,7 @@ module.exports = {
     path: DIST_DIR
   },
   module : {
-    loaders : [
+    rules : [
       {
         test : /\.jsx?/,
         include : SRC_DIR,
