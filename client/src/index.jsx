@@ -5,6 +5,7 @@ import $ from 'jquery';
 import Header from './Components/Header.jsx'
 import Navigation from './Components/Navigation.jsx'
 import Footer from './Components/Footer.jsx'
+import Main from './Components/Main.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -20,8 +21,11 @@ class App extends React.Component {
       <Header />
       <div className="row">
         <Navigation />
+        <div className="col-md-10 main">
+          <Main />
+        </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
       </div>
     )
   }
